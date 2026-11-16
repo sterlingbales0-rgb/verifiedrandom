@@ -1,0 +1,58 @@
+#adminMain { margin-top: 34px; }
+.card {
+	border: 2px solid #c7c7c7;
+	background: #fff;
+	padding: 22px;
+	max-width: 640px;
+	margin: 0 auto;
+}
+.card h3 { margin: 0 0 16px 0; }
+#gateForm, #addForm { display: flex; flex-direction: column; gap: 12px; }
+#gateForm input, #addForm input {
+	padding: 9px 10px;
+	font-size: 100%;
+	font-family: Arial, Helvetica, sans-serif;
+	border: 1px solid #b5b5b5;
+	border-radius: 2px;
+}
+#gateForm input:focus, #addForm input:focus { outline: none; border-color: #6b66c6; }
+#addForm label { font-size: 88%; font-weight: bold; color: #444; }
+button.solid {
+	padding: 10px 26px;
+	background: #d9d9d9;
+	border: 1px solid #000;
+	border-radius: 2px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	cursor: pointer;
+	align-self: flex-start;
+}
+button.solid:hover { border-width: 2px; }
+#gateMsg, #addMsg { font-size: 85%; min-height: 1.2em; margin-top: 10px; }
+#gateMsg.err, #addMsg.err { color: #b02a2a; }
+#gateMsg.ok, #addMsg.ok { color: #1d7a3d; }
+
+#entryWrap { margin-top: 36px; }
+#entryTable { width: 100%; border: 2px solid #c7c7c7; border-collapse: collapse; background: #fff; }
+#entryTable th, #entryTable td { border: 1px solid #dcdcdc; padding: 9px 10px; font-size: 92%; text-align: left; overflow-wrap: anywhere; }
+#entryTable th { background: #c7c7c7; }
+#entryTable td.actions { text-align: center; }
+button.del {
+	padding: 5px 14px;
+	background: #fff;
+	border: 1px solid #b02a2a;
+	color: #b02a2a;
+	border-radius: 2px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 85%;
+	cursor: pointer;
+}
+button.del:hover { background: #b02a2a; color: #fff; }
+button.del.armed { background: #b02a2a; color: #fff; }
+#emptyMsg { color: #555; font-size: 92%; margin-top: 14px; }
+
+@media (max-width: 820px) {
+	#entryTable th:nth-child(5), #entryTable td:nth-child(5) { display: none; }
+	#entryTable th, #entryTable td { padding: 7px 6px; font-size: 85%; }
+}
